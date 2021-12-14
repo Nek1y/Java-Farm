@@ -23,7 +23,7 @@ public class Player extends Rectangle {
     }
 
     private Tool tool;
-//    private Plant plant;
+   private Plant plant;
 
     public Player(int xPos, int yPos){
         super(xPos*Tile.size, yPos*Tile.size, Tile.size, Tile.size);

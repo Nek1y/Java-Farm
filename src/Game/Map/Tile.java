@@ -19,7 +19,13 @@ public class Tile extends Rectangle {
     }
 
     public void Act(Player player){
-
+        String toolName = player.getTool().name();
+        if(building == null){
+            if(toolName.equals("SHOVEL")){
+                building = new Garden(this);
+            }
+        }
+        else building.act(player);
     }
 
     public void buildProc(){
