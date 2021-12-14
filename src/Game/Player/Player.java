@@ -4,6 +4,7 @@ import java.awt.*;
 
 import Core.ResourceManager;
 import Game.Map.Tile;
+import Game.Plants.Plant;
 
 public class Player extends Rectangle {
 
@@ -23,7 +24,7 @@ public class Player extends Rectangle {
     }
 
     private Tool tool;
-   private Plant plant;
+    private Plant plant;
 
     public Player(int xPos, int yPos){
         super(xPos*Tile.size, yPos*Tile.size, Tile.size, Tile.size);
@@ -81,6 +82,8 @@ public class Player extends Rectangle {
     public Tool getTool(){
         return tool;
     }
+
+    public Plant getPlant(){ return plant; }
 
 
 
