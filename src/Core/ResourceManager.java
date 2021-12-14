@@ -45,6 +45,13 @@ public class ResourceManager {
             Sprites.add(GARDEN_READY_BLUE, ImageIO.read(new File("resource/Sprite/garden4-2.png")));
             Sprites.add(GARDEN_READY_GREEN, ImageIO.read(new File("resource/Sprite/garden4-3.png")));
             Sprites.add(PLAYER, ImageIO.read(new File("resource/Sprite/player.png")));
+            Sprites.add(HAND, ImageIO.read(new File("resource/Sprite/hand.png")));
+            Sprites.add(SHOVEL, ImageIO.read(new File("resource/Sprite/shovel.png")));
+            Sprites.add(WATER_POT, ImageIO.read(new File("resource/Sprite/water_pot.png")));
+            Sprites.add(PLANT_PURPLE, ImageIO.read(new File("resource/Sprite/plant_purple.png")));
+            Sprites.add(PLANT_BLUE, ImageIO.read(new File("resource/Sprite/plant_blue.png")));
+            Sprites.add(PLANT_GREEN, ImageIO.read(new File("resource/Sprite/plant_green.png")));
+
         } catch (IOException e){
             e.printStackTrace();
         }
