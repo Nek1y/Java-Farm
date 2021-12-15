@@ -14,8 +14,8 @@ public class Farm extends GameManager {
     private Player player;
 
     public Farm(){
-        int width = 20;
-        int height = 20;
+        int width = 10;
+        int height = 10;
         map = new Map(width, height);
         player = new Player(width/2, height/2);
     }

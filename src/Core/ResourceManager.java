@@ -24,10 +24,11 @@ public class ResourceManager {
     public static final byte PLAYER = 11;
     public static final byte HAND = 12;
     public static final byte SHOVEL = 12;
-    public static final byte WATER_POT = 13;
-    public static final byte PLANT_PURPLE = 14;
-    public static final byte PLANT_BLUE = 15;
-    public static final byte PLANT_GREEN = 16;
+    public static final byte PLANT_BAG = 13;
+    public static final byte WATER_POT = 14;
+    public static final byte PLANT_PURPLE = 15;
+    public static final byte PLANT_BLUE = 16;
+    public static final byte PLANT_GREEN = 17;
 
 
     //add load music
@@ -47,6 +48,7 @@ public class ResourceManager {
             Sprites.add(PLAYER, ImageIO.read(new File("resource/Sprite/player.png")));
             Sprites.add(HAND, ImageIO.read(new File("resource/Sprite/hand.png")));
             Sprites.add(SHOVEL, ImageIO.read(new File("resource/Sprite/shovel.png")));
+            Sprites.add(PLANT_BAG, ImageIO.read(new File("resource/Sprite/plant_bag.png")));
             Sprites.add(WATER_POT, ImageIO.read(new File("resource/Sprite/water_pot.png")));
             Sprites.add(PLANT_PURPLE, ImageIO.read(new File("resource/Sprite/plant_purple.png")));
             Sprites.add(PLANT_BLUE, ImageIO.read(new File("resource/Sprite/plant_blue.png")));

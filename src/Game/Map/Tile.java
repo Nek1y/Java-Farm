@@ -8,7 +8,7 @@ import Game.Player.Player;
 import java.awt.*;
 
 public class Tile extends Rectangle {
-    public static final int size = 32;
+    public static final int size = 64;
     private Building building;
     private byte SpriteID;
 
