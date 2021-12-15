@@ -23,12 +23,12 @@ public class ResourceManager {
     public static final byte GARDEN_READY_GREEN = 10;
     public static final byte PLAYER = 11;
     public static final byte HAND = 12;
-    public static final byte SHOVEL = 12;
-    public static final byte PLANT_BAG = 13;
-    public static final byte WATER_POT = 14;
-    public static final byte PLANT_PURPLE = 15;
-    public static final byte PLANT_BLUE = 16;
-    public static final byte PLANT_GREEN = 17;
+    public static final byte SHOVEL = 13;
+    public static final byte PLANT_BAG = 14;
+    public static final byte WATER_POT = 15;
+    public static final byte PLANT_PURPLE = 16;
+    public static final byte PLANT_BLUE = 17;
+    public static final byte PLANT_GREEN = 18;
 
 
     //add load music

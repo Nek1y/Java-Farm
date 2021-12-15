@@ -1,6 +1,7 @@
 package Game;
 
 import Core.GameManager;
+import Core.ResourceManager;
 import Game.Map.*;
 import Game.Player.Player;
 
@@ -31,7 +32,11 @@ public class Farm extends GameManager {
     protected void render(Graphics graphics) {
         map.render(graphics);
         player.render(graphics);
-//        int score = player.getScore();
+        graphics.setColor(Color.RED);
+        graphics.setFont(new Font("arial", Font.BOLD, 32));
+        graphics.drawString(player.getScore()+"", map.getWidth()/2*Tile.size, Tile.size/2);
+        //graphics.drawImage(ResourceManager.Sprites.get(player.getPlant().getUI()), 96, 32,Tile.size, Tile.size, null);
+        graphics.drawImage(ResourceManager.Sprites.get(player.getToolID()), 16, 32,Tile.size, Tile.size, null);
     }
 
     @Override
@@ -80,8 +85,8 @@ public class Farm extends GameManager {
     }
 
     public void playerAct(){
-        int xPos = player.x/Tile.size;
-        int yPos = player.y/Tile.size;
+        int xPos = (player.x+Tile.size/2)/Tile.size;
+        int yPos = (player.y+Tile.size)/Tile.size;
         map.getTile(xPos, yPos).Act(player);
     }
 

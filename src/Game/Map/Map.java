@@ -29,6 +29,14 @@ public class Map {
         }
     }
 
+    public int getWidth(){
+        return Width;
+    }
+
+    public int getHeight(){
+        return Height;
+    }
+
     public Tile getTile(int i, int j){
         return tiles[i][j];
     }
