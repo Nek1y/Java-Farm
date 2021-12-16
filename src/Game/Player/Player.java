@@ -120,7 +120,7 @@ public class Player extends Rectangle {
 
     public void switchPlant(){
         int id = plant_list.indexOf(plant);
-        if(id > plant_list.size()-1) id = 0;
+        if(id == plant_list.size()-1) id = 0;
         else id++;
         plant = plant_list.get(id);
     }
