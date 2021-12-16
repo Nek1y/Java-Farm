@@ -35,7 +35,7 @@ public class Farm extends GameManager {
         graphics.setColor(Color.RED);
         graphics.setFont(new Font("arial", Font.BOLD, 32));
         graphics.drawString(player.getScore()+"", map.getWidth()/2*Tile.size, Tile.size/2);
-        //graphics.drawImage(ResourceManager.Sprites.get(player.getPlant().getUI()), 96, 32,Tile.size, Tile.size, null);
+        graphics.drawImage(ResourceManager.Sprites.get(player.getPlant().getUI()), 96, 32,Tile.size, Tile.size, null);
         graphics.drawImage(ResourceManager.Sprites.get(player.getToolID()), 16, 32,Tile.size, Tile.size, null);
     }
 
