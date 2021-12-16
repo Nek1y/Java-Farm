@@ -8,7 +8,6 @@ import java.util.ArrayList;
 
 public class ResourceManager {
     public static ArrayList<BufferedImage> Sprites = new ArrayList<>();
-    //Array for sounds
 
     public static final byte GROUND = 0;
     public static final byte GARDEN = 1;
@@ -30,8 +29,6 @@ public class ResourceManager {
     public static final byte PLANT_BLUE = 17;
     public static final byte PLANT_GREEN = 18;
 
-
-    //add load music
     public static void load() {
         try{
             Sprites.add(GROUND, ImageIO.read(new File("resource/Sprite/ground.png")));
@@ -57,7 +54,6 @@ public class ResourceManager {
         } catch (IOException e){
             e.printStackTrace();
         }
-
     }
 
 }

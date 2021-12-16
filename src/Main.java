@@ -1,5 +1,6 @@
 import Core.Engine;
 import Core.GameManager;
+import Core.MusicManager;
 import Core.ResourceManager;
 import Game.Farm;
 
@@ -11,6 +12,7 @@ public class Main {
             @Override
             public void run() {
                 ResourceManager.load();
+                MusicManager.load();
                 Engine.init(new Farm());
                 Engine.run();
             }

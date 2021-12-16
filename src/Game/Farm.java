@@ -1,6 +1,7 @@
 package Game;
 
 import Core.GameManager;
+import Core.MusicManager;
 import Core.ResourceManager;
 import Game.Map.*;
 import Game.Player.Player;
@@ -19,6 +20,7 @@ public class Farm extends GameManager {
         int height = 10;
         map = new Map(width, height);
         player = new Player(width/2, height/2);
+        MusicManager.soundAmbient(MusicManager.AMBIENT);
     }
 
 

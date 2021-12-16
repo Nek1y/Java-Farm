@@ -1,5 +1,6 @@
 package Game.Map;
 
+import Core.MusicManager;
 import Core.ResourceManager;
 import Game.Builds.Building;
 import Game.Builds.Garden;
@@ -23,6 +24,9 @@ public class Tile extends Rectangle {
         if(building == null){
             if(toolName.equals("SHOVEL")){
                 building = new Garden(this);
+            }
+            else{
+                MusicManager.soundPlay(MusicManager.FAIL);
             }
         }
         else building.act(player);

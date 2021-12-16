@@ -1,5 +1,6 @@
 package Game.Builds;
 
+import Core.MusicManager;
 import Core.ResourceManager;
 import Game.Farm;
 import Game.Map.Tile;
@@ -25,28 +26,28 @@ public class Garden extends Building{
         tile.setID(ResourceManager.GARDEN);
         procTime = 0;
         plant = null;
-        //sound shovel
+        MusicManager.soundPlay(MusicManager.SHOVEL);
     }
 
     @Override
     public void act(Player player) {
         Player.Tool tool = player.getTool();
         if(state == State.START && tool == Player.Tool.PLANT_BAG){
-            //sound success
+            MusicManager.soundPlay(MusicManager.PLANT_BAG);
             plant = player.getPlant();
             tile.setID(plant.getPicPrepared());
             state = State.PREPARED;
         }
 
         else if(state == State.PREPARED && tool == Player.Tool.WATER_POT) {
-            //sound success
+            MusicManager.soundPlay(MusicManager.WATER_POT);
             tile.setID(plant.getPicProcessed());
             state = State.PROCESSED;
             procTime = plant.getSuccessTime();
         }
 
         else if(state == State.FINISHED && tool == Player.Tool.HAND){
-            //ss
+            MusicManager.soundPlay(MusicManager.HAND);
             tile.setID(ResourceManager.GARDEN);
             player.addScore(plant.getScoreAm());
             plant = null;
@@ -54,7 +55,7 @@ public class Garden extends Building{
         }
 
         else{
-            //sf
+            MusicManager.soundPlay(MusicManager.FAIL);
         }
     }
 
@@ -66,8 +67,6 @@ public class Garden extends Building{
         else if (state == State.PROCESSED){
             state = State.FINISHED;
             tile.setID(plant.getPicFinished());
-            //sound
-
         }
     }
 }
