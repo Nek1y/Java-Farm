@@ -12,6 +12,4 @@ public abstract class GameManager {
 
     protected abstract void keyReleased(int keyCode);
 
-
-
 }

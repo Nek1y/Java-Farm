@@ -23,7 +23,6 @@ public class Farm extends GameManager {
         MusicManager.soundAmbient(MusicManager.AMBIENT);
     }
 
-
     @Override
     protected void loop() {
         player.move();

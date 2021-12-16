@@ -1,6 +1,5 @@
 package Game.Plants;
 
-
 import Core.ResourceManager;
 
 public class BluePlant extends Plant {

@@ -53,7 +53,6 @@ public class Player extends Rectangle {
         return score;
     }
 
-
     public void move() {
         if(up) {
             super.y-=this.speed;

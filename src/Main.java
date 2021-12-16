@@ -1,5 +1,4 @@
 import Core.Engine;
-import Core.GameManager;
 import Core.MusicManager;
 import Core.ResourceManager;
 import Game.Farm;
